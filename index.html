@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>MAQUINADOS Y SERVICIOS PERSA | Taller Industrial de Precisión CNC en Apodaca, N.L.</title>
+    <meta name="description" content="Taller de maquinados industriales en Apodaca, Nuevo León. Maquinado convencional, CNC, rectificado de alta precisión, afilado, soldadura TIG/MIG, reparaciones mecánicas y comercialización de artículos industriales (bandas, baleros, tornillería).">
+    <meta name="theme-color" content="#0a192f">
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MAQUINADOS Y SERVICIOS PERSA">
+    <meta property="og:title" content="MAQUINADOS Y SERVICIOS PERSA | Taller Industrial en Apodaca, N.L.">
+    <meta property="og:description" content="Maquinado convencional, CNC, rectificado de alta precisión, afilado y reparaciones mecánicas en Apodaca, N.L.">
+    <meta property="og:image" content="https://i.postimg.cc/tgjBBBSr/persa-logo.png">
+    <meta property="og:image:alt" content="Logotipo Oficial de MAQUINADOS Y SERVICIOS PERSA">
+    <meta property="og:url" content="https://www.maquinadospersa.com/">
+    <meta property="og:locale" content="es_MX">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MAQUINADOS Y SERVICIOS PERSA | Taller Industrial en Apodaca, N.L.">
+    <meta name="twitter:description" content="Maquinados CNC, convencional, rectificado y soldadura industrial en Apodaca, Nuevo León.">
+    <meta name="twitter:image" content="https://i.postimg.cc/tgjBBBSr/persa-logo.png">
+
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/tgjBBBSr/persa-logo.png">
+    
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS compilado en build (reemplaza el CDN de desarrollo) -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-navy-950 selection:text-white overflow-x-hidden pb-16 sm:pb-0">
+
+    <aside class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-navy-800/80 relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-3 text-[11px] sm:text-xs">
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="hidden md:inline-flex items-center text-slate-300">
+                    <i class="fa-solid fa-location-dot text-cobalt-500 mr-1.5"></i> Apodaca, N.L.
+                </span>
+            </div>
+            <div class="flex items-center space-x-3 text-xs">
+                <span class="text-slate-400 hidden sm:inline">Cotizaciones:</span>
+                <a href="mailto:ventas@maquinadospersa.com" class="text-white hover:text-blue-300 font-semibold transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope text-blue-400"></i>
+                    <span>ventas@maquinadospersa.com</span>
+                </a>
+                <button onclick="copyEmailToClipboard()" class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/10 hover:bg-white/20 text-slate-200 transition" title="Copiar correo">
+                    Copiar
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Ir al inicio">
+                <div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 group-hover:border-navy-800 transition">
+                    <img src="https://i.postimg.cc/tgjBBBSr/persa-logo.png" 
+                         alt="MAQUINADOS Y SERVICIOS PERSA" 
+                         class="h-10 sm:h-12 w-auto max-w-[180px] sm:max-w-[210px] object-contain transition-transform group-hover:scale-[1.02]"
+                         onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                    <div class="hidden flex-col">
+                        <span class="font-extrabold text-navy-950 text-base leading-none">PERSA</span>
+                        <span class="text-[9px] uppercase tracking-wider text-slate-500 font-semibold">Maquinados</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+                <a href="#servicios" class="hover:text-navy-950 transition">Servicios</a>
+                <a href="#capacidades" class="hover:text-navy-950 transition">Maquinaria</a>
+                <a href="#facebook" class="hover:text-navy-950 transition flex items-center gap-1.5">
+                    <i class="fa-brands fa-facebook text-blue-600"></i>
+                    <span>Trabajos Realizados</span>
+                </a>
+                <a href="#ubicacion" class="hover:text-navy-950 transition">Ubicación</a>
+            </div>
+
+            <!-- Header Action Button -->
+            <div class="hidden sm:flex items-center space-x-3">
+                <a href="#cotizador" class="px-5 py-2.5 rounded-lg bg-navy-950 hover:bg-navy-900 active:bg-black text-white text-sm font-bold shadow-sm hover:shadow-md transition flex items-center gap-2">
+                    <i class="fa-solid fa-calculator text-xs text-blue-400"></i>
+                    <span>Solicitar Cotización</span>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button id="mobileMenuBtn" class="lg:hidden p-2.5 rounded-lg text-navy-950 hover:bg-slate-100 transition focus:outline-none" aria-label="Abrir menú de navegación">
+                <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-5 py-4 space-y-3 shadow-lg">
+            <a href="#servicios" class="block py-2 text-slate-700 font-semibold hover:text-navy-950">Servicios Especializados</a>
+            <a href="#capacidades" class="block py-2 text-slate-700 font-semibold hover:text-navy-950">Capacidades & Maquinaria</a>
+            <a href="#facebook" class="block py-2 text-slate-700 font-semibold hover:text-navy-950 flex items-center gap-2">
+                <i class="fa-brands fa-facebook text-blue-600"></i> Publicaciones de Taller
+            </a>
+            <a href="#ubicacion" class="block py-2 text-slate-700 font-semibold hover:text-navy-950">Ubicación & Horarios</a>
+            <div class="pt-3 border-t border-slate-100">
+                <a href="#cotizador" class="block text-center py-3 bg-navy-950 text-white rounded-lg font-bold text-sm shadow">
+                    Solicitar Cotización por Correo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-12 pb-16 lg:py-20 bg-white border-b border-slate-200/80 industrial-grid">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column: Proposition & CTAs -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-slate-100 border border-slate-200 text-navy-950 text-xs font-semibold tracking-tight">
+                        <span class="w-2 h-2 rounded-full bg-cobalt-500"></span>
+                        <span>Soluciones Metalmecánicas en Apodaca, N.L.</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold text-navy-950 tracking-tight leading-[1.12]">
+                        Precisión micrométrica en <span class="text-cobalt-600">maquinados</span> y mantenimiento industrial.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
+                        En <strong>MAQUINADOS Y SERVICIOS PERSA</strong> fabricamos, rectificamos y reparamos componentes críticos para líneas de manufactura en Apodaca y el área metropolitana de Monterrey. Garantizamos tolerancias estrictas y entrega a tiempo.
+                    </p>
+
+                    <!-- Trust Signals Bar -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs font-medium text-slate-700">
+                        <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i>
+                            <span>Tolerancias ±0.0005"</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i>
+                            <span>Pieza única y lotes</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                            <i class="fa-solid fa-circle-check text-emerald-600 text-sm"></i>
+                            <span>Atención a urgencias</span>
+                        </div>
+                    </div>
+
+                    <!-- Action CTAs -->
+                    <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+                        <a href="#cotizador" class="px-7 py-3.5 rounded-lg bg-navy-950 hover:bg-navy-900 active:bg-black text-white font-bold text-center text-sm sm:text-base shadow-sm hover:shadow-md transition flex items-center justify-center gap-2.5">
+                            <i class="fa-solid fa-calculator text-blue-400"></i>
+                            <span>Cotizar Proyecto Técnico</span>
+                        </a>
+                        <a href="mailto:ventas@maquinadospersa.com?subject=Solicitud%20de%20Cotizacion%20con%20Plano%20-%20PERSA" class="px-7 py-3.5 rounded-lg border-2 border-slate-300 hover:border-navy-950 text-navy-950 font-bold text-center text-sm sm:text-base hover:bg-slate-50 transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paperclip text-slate-500"></i>
+                            <span>Enviar Planos por Correo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column: Engineering Tech Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden">
+                        <!-- Card Header -->
+                        <div class="bg-navy-950 text-white p-5 border-b border-navy-800 flex items-center justify-between">
+                            <div>
+                                <div class="text-xs uppercase tracking-widest text-blue-400 font-bold">Ficha de Taller</div>
+                                <h3 class="text-base font-bold text-white mt-0.5">Capacidades Instaladas</h3>
+                            </div>
+                            <span class="px-2.5 py-1 text-[11px] font-bold rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                                Apodaca, N.L.
+                            </span>
+                        </div>
+
+                        <!-- Card Specifications List -->
+                        <div class="p-6 space-y-4 text-xs text-slate-700 divide-y divide-slate-100">
+                            <div class="flex items-start justify-between gap-4 pt-3 first:pt-0">
+                                <div>
+                                    <div class="font-bold text-navy-950 text-sm">Maquinado Convencional & CNC</div>
+                                    <div class="text-slate-500 mt-0.5">Torneado, fresado vertical, cuñeros, roscados y barrenado.</div>
+                                </div>
+                                <span class="font-mono font-bold text-slate-900 bg-slate-100 px-2 py-1 rounded shrink-0">±0.0005"</span>
+                            </div>
+
+                            <div class="flex items-start justify-between gap-4 pt-3">
+                                <div>
+                                    <div class="font-bold text-navy-950 text-sm">Rectificado & Afilado</div>
+                                    <div class="text-slate-500 mt-0.5">Superficies planas, exteriores cilíndricos y cuchillas industriales.</div>
+                                </div>
+                                <span class="font-mono font-bold text-slate-900 bg-slate-100 px-2 py-1 rounded shrink-0">Ra controlado</span>
+                            </div>
+
+                            <div class="flex items-start justify-between gap-4 pt-3">
+                                <div>
+                                    <div class="font-bold text-navy-950 text-sm">Soldadura & Reconstrucción</div>
+                                    <div class="text-slate-500 mt-0.5">TIG, MIG/MAG y electrodo para relleno de flechas y cajas de balero.</div>
+                                </div>
+                                <span class="font-mono font-bold text-slate-900 bg-slate-100 px-2 py-1 rounded shrink-0">TIG / MIG</span>
+                            </div>
+
+                            <div class="flex items-start justify-between gap-4 pt-3">
+                                <div>
+                                    <div class="font-bold text-navy-950 text-sm">Materiales Mecanizables</div>
+                                    <div class="text-slate-500 mt-0.5">Acero 4140, 1018, 1045, Inox (304, 316), Aluminio, Bronce y Nylamid.</div>
+                                </div>
+                                <span class="font-mono font-bold text-slate-900 bg-slate-100 px-2 py-1 rounded shrink-0">Metales & Plásticos</span>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Callout -->
+                        <div class="bg-slate-50 p-4 border-t border-slate-200 flex items-center justify-between text-xs">
+                            <span class="text-slate-600 font-medium">¿Línea de producción detenida?</span>
+                            <a href="#cotizador" class="text-cobalt-600 font-bold hover:underline flex items-center gap-1">
+                                <span>Atención Prioritaria</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-slate-50 border-b border-slate-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
+                <div class="pt-2 sm:pt-0">
+                    <div class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-950 font-mono tracking-tight">+15 Años</div>
+                    <div class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Experiencia en Taller</div>
+                </div>
+                <div class="pt-2 sm:pt-0">
+                    <div class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-950 font-mono tracking-tight">± 0.0005"</div>
+                    <div class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Tolerancia de Precisión</div>
+                </div>
+                <div class="pt-2 sm:pt-0">
+                    <div class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-950 font-mono tracking-tight">&lt; 2 Horas</div>
+                    <div class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Respuesta a Cotizaciones</div>
+                </div>
+                <div class="pt-2 sm:pt-0">
+                    <div class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-950 font-mono tracking-tight">Apodaca</div>
+                    <div class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Corredor Industrial N.L.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Title -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-cobalt-600 bg-blue-50 px-3 py-1 rounded border border-blue-100">
+                    Especialidades del Taller
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-navy-950 mt-3 tracking-tight">
+                    Servicios de Maquinado y Mantenimiento Mecánico
+                </h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base leading-relaxed">
+                    Fabricamos piezas mecánicas a partir de plano, muestra física dañada o requerimientos de ingeniería para maquinaria industrial en Nuevo León.
+                </p>
+            </div>
+
+            <!-- Services Grid: 6 Distinct Pillars -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                
+                <!-- 1. Maquinado Convencional -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-cobalt-600 hover:shadow-xl transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-slate-100 text-navy-950 group-hover:bg-navy-950 group-hover:text-white transition-colors duration-300 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <span class="text-[10px] font-mono uppercase font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Torno & Fresa</span>
+                        <h3 class="text-lg font-bold text-navy-950 mt-2 mb-2 group-hover:text-cobalt-600 transition">
+                            Maquinado Convencional
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Torno paralelo y fresadora universal para fabricación de flechas, bujes, coples, cuñeros y engranes unitarios o lotes cortos sin tiempos muertos.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-3">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Torneado de flechas hasta longitudes mayores</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Fresado, careado y ranurado normalizado</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Roscas estándar, milimétricas y Acme</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <button onclick="prefillQuote('Maquinado Convencional')" class="w-full py-2 px-3 rounded bg-slate-50 hover:bg-navy-950 hover:text-white text-navy-950 text-xs font-bold transition flex items-center justify-center gap-1.5">
+                            <span>Especificar en cotización</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2. Maquinado CNC -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-cobalt-600 hover:shadow-xl transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-slate-100 text-navy-950 group-hover:bg-navy-950 group-hover:text-white transition-colors duration-300 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <span class="text-[10px] font-mono uppercase font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Alta Repetibilidad</span>
+                        <h3 class="text-lg font-bold text-navy-950 mt-2 mb-2 group-hover:text-cobalt-600 transition">
+                            Maquinado CNC
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Centros de maquinado y tornos de control numérico programados por CAM para producción en serie, piezas complejas y tolerancias micrométricas repetitivas.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-3">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Lotes medianos y de gran escala</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Interpolaciones 3D y barrenado profundo</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Control de calidad por muestreo de lote</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <button onclick="prefillQuote('Maquinado CNC')" class="w-full py-2 px-3 rounded bg-slate-50 hover:bg-navy-950 hover:text-white text-navy-950 text-xs font-bold transition flex items-center justify-center gap-1.5">
+                            <span>Especificar en cotización</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. Rectificado -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-cobalt-600 hover:shadow-xl transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-slate-100 text-navy-950 group-hover:bg-navy-950 group-hover:text-white transition-colors duration-300 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-circle-notch"></i>
+                        </div>
+                        <span class="text-[10px] font-mono uppercase font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Superficies & Cilindros</span>
+                        <h3 class="text-lg font-bold text-navy-950 mt-2 mb-2 group-hover:text-cobalt-600 transition">
+                            Rectificado de Precisión
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Rectificado plano tangencial y cilíndrico para piezas con tratamiento térmico. Garantizamos máxima planicidad, paralelismo y rugosidad Ra bajo especificación.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-3">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Acabados de alta precisión y concentricidad</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Rectificado de placas, matrices y cuchillas</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Ajustes para pistas de rodamientos</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <button onclick="prefillQuote('Rectificado')" class="w-full py-2 px-3 rounded bg-slate-50 hover:bg-navy-950 hover:text-white text-navy-950 text-xs font-bold transition flex items-center justify-center gap-1.5">
+                            <span>Especificar en cotización</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 4. Afilado Industrial -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-cobalt-600 hover:shadow-xl transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-slate-100 text-navy-950 group-hover:bg-navy-950 group-hover:text-white transition-colors duration-300 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <span class="text-[10px] font-mono uppercase font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Herramental de Corte</span>
+                        <h3 class="text-lg font-bold text-navy-950 mt-2 mb-2 group-hover:text-cobalt-600 transition">
+                            Afilado Especializado
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Reacondicionamiento de herramientas de corte: cuchillas de guillotina para lámina, cortadores circulares, fresas y brocas especiales respetando ángulos originales.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-3">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Mantenimiento preventivo y correctivo</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Aumento de vida útil de herramientas caras</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Cuchillas de empaque, troquel y corte</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <button onclick="prefillQuote('Afilado')" class="w-full py-2 px-3 rounded bg-slate-50 hover:bg-navy-950 hover:text-white text-navy-950 text-xs font-bold transition flex items-center justify-center gap-1.5">
+                            <span>Especificar en cotización</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 5. Soldadura Industrial -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-cobalt-600 hover:shadow-xl transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-slate-100 text-navy-950 group-hover:bg-navy-950 group-hover:text-white transition-colors duration-300 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-fire-burner"></i>
+                        </div>
+                        <span class="text-[10px] font-mono uppercase font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">TIG • MIG • SMAW</span>
+                        <h3 class="text-lg font-bold text-navy-950 mt-2 mb-2 group-hover:text-cobalt-600 transition">
+                            Soldadura y Reconstrucción
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Aplicación calificada para unión estructural y relleno de desgaste en flechas, levas y componentes fracturados antes de su torneado o rectificado final.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-3">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Relleno para posterior maquinado</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Aceros al carbón, inoxidables y aluminio</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Reparación de fisuras y anclajes</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <button onclick="prefillQuote('Soldadura')" class="w-full py-2 px-3 rounded bg-slate-50 hover:bg-navy-950 hover:text-white text-navy-950 text-xs font-bold transition flex items-center justify-center gap-1.5">
+                            <span>Especificar en cotización</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 6. Reparaciones Mecánicas -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-cobalt-600 hover:shadow-xl transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-slate-100 text-navy-950 group-hover:bg-navy-950 group-hover:text-white transition-colors duration-300 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <span class="text-[10px] font-mono uppercase font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Mantenimiento Industrial</span>
+                        <h3 class="text-lg font-bold text-navy-950 mt-2 mb-2 group-hover:text-cobalt-600 transition">
+                            Reparaciones Industriales
+                        </h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Recuperación de elementos mecánicos averiados: encamisado de barrenos, reconstrucción de cajas de chumaceras, balanceo y adaptación rápida de refacciones.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 font-medium border-t border-slate-100 pt-3">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Reingeniería inversa desde muestra dañada</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Encamisado para recuperar medidas originales</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Respuesta prioritaria a líneas detenidas</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <button onclick="prefillQuote('Reparaciones')" class="w-full py-2 px-3 rounded bg-slate-50 hover:bg-navy-950 hover:text-white text-navy-950 text-xs font-bold transition flex items-center justify-center gap-1.5">
+                            <span>Especificar en cotización</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 7. Comercialización de Artículos Industriales -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-cobalt-600 hover:shadow-xl transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between md:col-span-2 lg:col-span-3 lg:flex-row lg:items-center lg:gap-8 bg-gradient-to-r from-white via-slate-50/50 to-blue-50/30">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-slate-100 text-navy-950 group-hover:bg-navy-950 group-hover:text-white transition-colors duration-300 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-boxes-packing"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-mono uppercase font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">Suministro & Distribución MRO</span>
+                                <h3 class="text-lg font-bold text-navy-950 group-hover:text-cobalt-600 transition">
+                                    Comercialización de Artículos Industriales
+                                </h3>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4 max-w-3xl">
+                            Suministro ágil de componentes y refacciones para mantenimiento en plantas productivas de Apodaca y Monterrey. Distribuimos bandas de transmisión, baleros y rodamientos de precisión, tornillería en grados especiales, retenes, sellos y chumaceras.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs text-slate-600 font-medium pt-2 border-t border-slate-100">
+                            <div class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2 shrink-0"></i> Bandas industriales (síncronas, en V y dentadas)</div>
+                            <div class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2 shrink-0"></i> Baleros, rodamientos y chumaceras</div>
+                            <div class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2 shrink-0"></i> Tornillería Grado 5, 8, Inoxidable y métrica</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 lg:mt-0 pt-4 lg:pt-0 border-t lg:border-t-0 border-slate-100 shrink-0 lg:w-56">
+                        <button onclick="prefillQuote('Comercialización de Artículos Industriales')" class="w-full py-3 px-4 rounded-lg bg-navy-950 hover:bg-cobalt-600 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-sm">
+                            <i class="fa-solid fa-clipboard-list text-blue-400"></i>
+                            <span>Cotizar Artículos</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="capacidades" class="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-cobalt-600">Infraestructura Instalada</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950 mt-1">
+                    Maquinaria y Bahías de Trabajo
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm mt-2">
+                    Capacidad instalada para solventar desde un mecanizado express hasta lotes de producción recurrente.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="text-navy-950 text-2xl mb-3"><i class="fa-solid fa-circle-nodes"></i></div>
+                    <h3 class="font-bold text-navy-950 text-base mb-1">Área de Torneado y Fresado</h3>
+                    <p class="text-xs text-slate-600 mb-4 leading-relaxed">Tornos con bancadas extendidas para flechas largas y fresadoras verticales con lectores digitales de coordenadas (DRO) para barrenado y cuñeros.</p>
+                    <span class="text-[11px] font-mono font-bold text-navy-950 bg-slate-100 px-2.5 py-1 rounded">Convencional & CNC</span>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="text-navy-950 text-2xl mb-3"><i class="fa-solid fa-compact-disc"></i></div>
+                    <h3 class="font-bold text-navy-950 text-base mb-1">Área de Rectificado y Afilado</h3>
+                    <p class="text-xs text-slate-600 mb-4 leading-relaxed">Rectificadora plana tangencial con mesa magnética y rectificadora cilíndrica de exteriores para tolerancias de micras y rugosidad controlada.</p>
+                    <span class="text-[11px] font-mono font-bold text-navy-950 bg-slate-100 px-2.5 py-1 rounded">Acabados de alta precisión</span>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="text-navy-950 text-2xl mb-3"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 class="font-bold text-navy-950 text-base mb-1">Bahía de Soldadura y Pailería</h3>
+                    <p class="text-xs text-slate-600 mb-4 leading-relaxed">Inversores multiproceso para soldadura TIG en aluminio e inoxidable, microalambre MIG de alto amperaje y antorcha de corte por plasma.</p>
+                    <span class="text-[11px] font-mono font-bold text-navy-950 bg-slate-100 px-2.5 py-1 rounded">Procesos TIG / MIG</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cotizador" class="py-16 sm:py-24 bg-white border-t border-slate-200 industrial-grid">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+                <!-- Header of Form -->
+                <div class="bg-navy-950 text-white p-6 sm:p-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest text-blue-400 font-mono font-bold">Respuesta Técnica en &lt; 2 Horas</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">
+                                Solicitud Directa de Cotización
+                            </h2>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-xl">
+                                Envíanos los detalles de tu pieza. Recibirás respuesta formal por correo para adjuntar planos y confirmar tiempos de entrega.
+                            </p>
+                        </div>
+                        <div class="text-left sm:text-right shrink-0">
+                            <div class="text-[11px] text-slate-400 font-mono">MAQUINADOS PERSA</div>
+                            <div class="font-mono text-emerald-400 font-bold text-xs sm:text-sm">Apodaca, Nuevo León</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Body -->
+                <form id="quoteForm" class="p-6 sm:p-8 space-y-6" onsubmit="handleQuoteSubmit(event)">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        
+                        <!-- Contact Name -->
+                        <div>
+                            <label for="clientName" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Nombre / Empresa *</label>
+                            <input type="text" id="clientName" required placeholder="Ej. Ing. Carlos Garza / Metalsa" 
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-navy-950 focus:border-navy-950 text-base sm:text-sm outline-none transition bg-slate-50 focus:bg-white">
+                        </div>
+
+                        <!-- Contact Email -->
+                        <div>
+                            <label for="clientEmail" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Correo Electrónico Empresarial *</label>
+                            <input type="email" id="clientEmail" required placeholder="Ej. compras@empresa.com" 
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-navy-950 focus:border-navy-950 text-base sm:text-sm outline-none transition bg-slate-50 focus:bg-white">
+                        </div>
+
+                        <!-- Service Selector -->
+                        <div>
+                            <label for="serviceType" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Servicio Requerido *</label>
+                            <select id="serviceType" required 
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-navy-950 focus:border-navy-950 text-base sm:text-sm outline-none bg-slate-50 focus:bg-white transition cursor-pointer">
+                                <option value="" disabled selected>Selecciona un servicio</option>
+                                <option value="Maquinado Convencional">Maquinado Convencional (Torno / Fresa)</option>
+                                <option value="Maquinado CNC">Maquinado CNC (Serie / Centro de Maquinado)</option>
+                                <option value="Rectificado">Rectificado (Plano o Cilíndrico)</option>
+                                <option value="Afilado">Afilado de Herramientas / Cuchillas</option>
+                                <option value="Soldadura">Soldadura Especializada / Relleno</option>
+                                <option value="Reparaciones">Reparación Mecánica / Encamisado</option>
+                                <option value="Comercialización de Artículos Industriales">Comercialización de Artículos Industriales (Bandas, Baleros, Tornillería)</option>
+                                <option value="Mantenimiento Integral">Varios / Mantenimiento Integral</option>
+                            </select>
+                        </div>
+
+                        <!-- Material -->
+                        <div>
+                            <label for="materialType" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Material de la Pieza</label>
+                            <select id="materialType" 
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-navy-950 focus:border-navy-950 text-base sm:text-sm outline-none bg-slate-50 focus:bg-white transition cursor-pointer">
+                                <option value="Por definir / Asesoría requerida">Por definir / Asesoría de taller</option>
+                                <option value="Acero Tratado / Grado Maquinaria (4140, D2, O1)">Acero Tratado (4140, D2, O1)</option>
+                                <option value="Acero al Carbón (1018, 1045, A36)">Acero al Carbón (1018, 1045, A36)</option>
+                                <option value="Acero Inoxidable (304, 316)">Acero Inoxidable (304, 316)</option>
+                                <option value="Aluminio (6061, 7075)">Aluminio (6061, 7075)</option>
+                                <option value="Bronce / Latón">Bronce / Latón</option>
+                                <option value="Plásticos de Ingeniería (Nylamid, Delrin)">Plásticos de Ingeniería (Nylamid, Delrin)</option>
+                            </select>
+                        </div>
+
+                        <!-- Quantity -->
+                        <div>
+                            <label for="pieceQuantity" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Cantidad Estimada</label>
+                            <input type="text" id="pieceQuantity" placeholder="Ej. 1 prototipo, 25 piezas, urgente" 
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-navy-950 focus:border-navy-950 text-base sm:text-sm outline-none transition bg-slate-50 focus:bg-white">
+                        </div>
+
+                        <!-- Urgency -->
+                        <div>
+                            <label for="urgencyLevel" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Plazo Requerido</label>
+                            <select id="urgencyLevel" 
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-navy-950 focus:border-navy-950 text-base sm:text-sm outline-none bg-slate-50 focus:bg-white transition cursor-pointer">
+                                <option value="Estándar (3 a 7 días)">Estándar (3 a 7 días hábiles)</option>
+                                <option value="Urgente (24 a 48 horas)">Urgente (24 a 48 horas)</option>
+                                <option value="Emergencia de Línea Parada">Emergencia (Línea de producción detenida)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Details & Specifications -->
+                    <div>
+                        <label for="projectNotes" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                            Especificaciones y Tolerancias
+                        </label>
+                        <textarea id="projectNotes" rows="3" placeholder="Describe tolerancias críticas, si cuentas con plano digital o si requieres recolección física de la muestra en tu planta en Apodaca/Pesquería..." 
+                            class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-navy-950 focus:border-navy-950 text-base sm:text-sm outline-none transition bg-slate-50 focus:bg-white"></textarea>
+                    </div>
+
+                    <!-- Submission buttons: Email Workflow -->
+                    <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
+                        <button type="submit" class="w-full sm:w-1/2 py-3.5 px-6 rounded-lg bg-navy-950 hover:bg-navy-900 active:bg-black text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane text-xs text-blue-400"></i>
+                            <span>Generar Solicitud Formal</span>
+                        </button>
+                        
+                        <a href="mailto:ventas@maquinadospersa.com?subject=Envio%20Directo%20de%20Planos%20Tecnicos%20-%20PERSA" class="w-full sm:w-1/2 py-3.5 px-6 rounded-lg border border-slate-300 hover:border-navy-950 text-navy-950 hover:bg-slate-50 font-bold text-sm transition flex items-center justify-center gap-2 text-center">
+                            <i class="fa-solid fa-paperclip text-slate-600"></i>
+                            <span>Adjuntar Planos por Correo</span>
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center justify-center gap-2 text-[11px] text-slate-500 pt-1">
+                        <i class="fa-solid fa-shield-halved text-slate-400"></i>
+                        <span>Confidencialidad técnica e industrial garantizada bajo NDA si tu empresa lo requiere.</span>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="facebook" class="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-blue-50 border border-blue-200 text-blue-800 text-xs font-bold uppercase tracking-wider mb-2">
+                    <i class="fa-brands fa-facebook text-blue-600"></i>
+                    <span>Taller en Marcha</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950 tracking-tight">
+                    Trabajos Recientes en Facebook
+                </h2>
+                <p class="text-slate-600 mt-2 text-xs sm:text-sm">
+                    Revisa las piezas maquinadas, reparaciones y entregas que documentamos en nuestra página oficial de Facebook.
+                </p>
+            </div>
+
+            <!-- Facebook Profile Banner -->
+            <div class="max-w-4xl mx-auto bg-white rounded-xl border border-slate-200 shadow-sm p-4 sm:p-5 mb-8">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3.5 text-center sm:text-left flex-col sm:flex-row">
+                        <img src="https://i.postimg.cc/tgjBBBSr/persa-logo.png" 
+                             alt="PERSA Logo" 
+                             class="w-14 h-14 rounded-lg bg-white object-contain p-1 border border-slate-200 shadow-sm"
+                             onerror="this.src='https://placehold.co/56x56/0c1e38/ffffff?text=PERSA'">
+                        <div>
+                            <div class="flex items-center justify-center sm:justify-start gap-1.5">
+                                <h3 class="font-bold text-navy-950 text-base">MAQUINADOS PERSA</h3>
+                                <i class="fa-solid fa-circle-check text-blue-600 text-xs" title="Página Oficial"></i>
+                            </div>
+                            <p class="text-xs text-slate-500">@maquinadospersa • Taller de maquinados industriales en Apodaca, N.L.</p>
+                        </div>
+                    </div>
+
+                    <a href="https://facebook.com/maquinadospersa" target="_blank" rel="noopener noreferrer" 
+                       class="px-4 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow transition flex items-center gap-2 shrink-0">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Ir a facebook</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Recent Posts Feed Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="p-4 flex items-center gap-2.5 border-b border-slate-100">
+                            <img src="https://i.postimg.cc/tgjBBBSr/persa-logo.png" alt="PERSA" class="w-8 h-8 rounded border border-slate-200 object-contain p-0.5">
+                            <div class="min-w-0 flex-1">
+                                <div class="font-bold text-navy-950 text-xs truncate">MAQUINADOS PERSA</div>
+                                <div class="text-[10px] text-slate-400">Publicación técnica</div>
+                            </div>
+                            <i class="fa-brands fa-facebook text-blue-600 text-sm"></i>
+                        </div>
+
+                        <div class="p-4 text-xs text-slate-700 space-y-2">
+                            <p class="font-medium">
+                                ⚙️ <strong>Fabricacion de tapones expansivos</strong> para pruebas hidrostaticas.
+                            </p>
+                            <p class="text-slate-500 text-[11px]">
+                                Maquinado CNC con tolerancias de ±0.0005".
+                            </p>
+                        </div>
+
+                        <!-- Job Photograph 1 -->
+                        <div class="relative h-48 w-full overflow-hidden bg-slate-900">
+                            <img src="https://i.postimg.cc/Gtnh69t1/maquinados-cnc-2.jpg" 
+                                 alt="Maquinado CNC de flechas de transmisión en acero 4140" 
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                 loading="lazy"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/0A192F/ffffff?text=Torneado+CNC+Flechas+4140';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            <span class="absolute bottom-2.5 left-3 text-[11px] font-mono text-white/95 bg-navy-950/85 px-2 py-0.5 rounded backdrop-blur-sm border border-white/10 flex items-center gap-1.5">
+                                <i class="fa-solid fa-camera text-[10px] text-blue-400"></i>
+                                <span>Torno CNC</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-medium">
+                        <span><i class="fa-solid fa-thumbs-up text-blue-600 mr-1"></i>34 reacciones</span>
+                        <a href="https://facebook.com/maquinadospersa" target="_blank" rel="noopener noreferrer" class="text-navy-950 hover:text-blue-600 font-bold flex items-center gap-1">
+                            <span>Ver en Facebook</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="p-4 flex items-center gap-2.5 border-b border-slate-100">
+                            <img src="https://i.postimg.cc/tgjBBBSr/persa-logo.png" alt="PERSA" class="w-8 h-8 rounded border border-slate-200 object-contain p-0.5">
+                            <div class="min-w-0 flex-1">
+                                <div class="font-bold text-navy-950 text-xs truncate">MAQUINADOS PERSA</div>
+                                <div class="text-[10px] text-slate-400">Publicación técnica</div>
+                            </div>
+                            <i class="fa-brands fa-facebook text-blue-600 text-sm"></i>
+                        </div>
+
+                        <div class="p-4 text-xs text-slate-700 space-y-2">
+                            <p class="font-medium">
+                                🔪 <strong>Afilado de precisión y rectificado plano</strong> de cuchillas de guillotina.
+                            </p>
+                            <p class="text-slate-500 text-[11px]">
+                                Recuperación de ángulo original de corte para evitar rebabas en corte industrial.
+                            </p>
+                        </div>
+
+                        <!-- Job Photograph 2 -->
+                        <div class="relative h-48 w-full overflow-hidden bg-slate-900">
+                            <img src="https://i.postimg.cc/cHw8vp8n/image.jpg" 
+                                 alt="Rectificado plano y afilado de cuchillas industriales" 
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                 loading="lazy"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/0A192F/ffffff?text=Rectificado+y+Afilado';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            <span class="absolute bottom-2.5 left-3 text-[11px] font-mono text-white/95 bg-navy-950/85 px-2 py-0.5 rounded backdrop-blur-sm border border-white/10 flex items-center gap-1.5">
+                                <i class="fa-solid fa-camera text-[10px] text-emerald-400"></i>
+                                <span>Rectificado Plano • Cuchillas</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-medium">
+                        <span><i class="fa-solid fa-thumbs-up text-blue-600 mr-1"></i>28 reacciones</span>
+                        <a href="https://facebook.com/maquinadospersa" target="_blank" rel="noopener noreferrer" class="text-navy-950 hover:text-blue-600 font-bold flex items-center gap-1">
+                            <span>Ver en Facebook</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="p-4 flex items-center gap-2.5 border-b border-slate-100">
+                            <img src="https://i.postimg.cc/tgjBBBSr/persa-logo.png" alt="PERSA" class="w-8 h-8 rounded border border-slate-200 object-contain p-0.5">
+                            <div class="min-w-0 flex-1">
+                                <div class="font-bold text-navy-950 text-xs truncate">MAQUINADOS PERSA</div>
+                                <div class="text-[10px] text-slate-400">Publicación técnica</div>
+                            </div>
+                            <i class="fa-brands fa-facebook text-blue-600 text-sm"></i>
+                        </div>
+
+                        <div class="p-4 text-xs text-slate-700 space-y-2">
+                            <p class="font-medium">
+                                ⚡ <strong>Fabricacion a base de muestra</strong> de engrane en nylamid.
+                            </p>
+                            <p class="text-slate-500 text-[11px]">
+                                Maquinado en torno y generado.
+                            </p>
+                        </div>
+
+                        <!-- Job Photograph 3 -->
+                        <div class="relative h-48 w-full overflow-hidden bg-slate-900">
+                            <img src="https://i.postimg.cc/2yN8g3yp/maquinados-cnc-3.jpg" 
+                                 alt="Fabricacion en torno y generadora de componentes mecánicos" 
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                 loading="lazy"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/0A192F/ffffff?text=Soldadura+TIG+Reconstruccion';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            <span class="absolute bottom-2.5 left-3 text-[11px] font-mono text-white/95 bg-navy-950/85 px-2 py-0.5 rounded backdrop-blur-sm border border-white/10 flex items-center gap-1.5">
+                                <i class="fa-solid fa-camera text-[10px] text-amber-400"></i>
+                                <span>Torno • Generadora</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-medium">
+                        <span><i class="fa-solid fa-thumbs-up text-blue-600 mr-1"></i>49 reacciones</span>
+                        <a href="https://facebook.com/maquinadospersa" target="_blank" rel="noopener noreferrer" class="text-navy-950 hover:text-blue-600 font-bold flex items-center gap-1">
+                            <span>Ver en Facebook</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-cobalt-600">Sede Operativa</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950 mt-1">
+                    Ubicación y Canales Directos
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm mt-2">
+                    Situados en Apodaca, con conectividad a Carretera a Miguel Alemán y Anillo Periférico.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                
+                <!-- Contact Info Card -->
+                <div class="lg:col-span-5 bg-navy-950 text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xl">
+                    <div class="space-y-6">
+                        <div class="border-b border-navy-800 pb-4">
+                            <h3 class="text-lg font-bold text-white">MAQUINADOS Y SERVICIOS PERSA</h3>
+                            <p class="text-xs text-blue-300 font-mono mt-1">Apodaca, Nuevo León, México</p>
+                        </div>
+
+                        <div class="space-y-4 text-xs sm:text-sm">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded bg-navy-800 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-slate-200">Ubicación del Taller:</div>
+                                    <p class="text-slate-400 text-xs mt-0.5">Zona Industrial Apodaca, C.P. 66612, Apodaca, N.L.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded bg-navy-800 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="min-w-0">
+                                    <div class="font-bold text-slate-200">Correo Electrónico Oficial:</div>
+                                    <a href="mailto:ventas@maquinadospersa.com" class="text-blue-300 hover:text-white text-xs mt-0.5 block font-semibold transition break-all">
+                                        ventas@maquinadospersa.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded bg-navy-800 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-slate-200">Horarios de Operación:</div>
+                                    <p class="text-slate-400 text-xs mt-0.5 font-medium">
+                                        Lunes a Viernes: 9:00 am - 6:00 pm<br>
+                                        Sábados: 9:00 am - 2:00 pm
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email CTA inside card -->
+                    <div class="pt-6 mt-6 border-t border-navy-800">
+                        <a href="mailto:ventas@maquinadospersa.com?subject=Consulta%20Tecnica%20de%20Maquinado" class="w-full py-3 bg-cobalt-600 hover:bg-cobalt-500 active:bg-cobalt-700 text-white font-bold rounded-lg text-center text-xs sm:text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-solid fa-paper-plane text-xs"></i>
+                            <span>Escribir a ventas@maquinadospersa.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Industrial Coverage Map Card -->
+                <div class="lg:col-span-7 bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-navy-950 font-bold text-sm sm:text-base">
+                            <i class="fa-solid fa-industry text-cobalt-600"></i>
+                            <span>Cobertura en Parques Industriales de Nuevo León</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                            Contamos con ruta de recolección y entrega de muestras y piezas terminadas en los principales corredores fabriles del estado:
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5 text-xs text-slate-700 font-medium">
+                            <div class="flex items-center gap-2 bg-white p-3 rounded-lg border border-slate-200">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i>
+                                <span>Parque Industrial Huinalá</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white p-3 rounded-lg border border-slate-200">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i>
+                                <span>Prologis & Kronos Apodaca</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white p-3 rounded-lg border border-slate-200">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i>
+                                <span>Pesquería (Ternium / Kia)</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white p-3 rounded-lg border border-slate-200">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i>
+                                <span>San Nicolás y Monterrey</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-5 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+                        <span class="text-slate-500"><i class="fa-solid fa-truck text-slate-400 mr-1.5"></i> Servicio de recolección en planta disponible previa coordinación</span>
+                        <a href="#cotizador" class="font-bold text-cobalt-600 hover:text-navy-950 transition">Solicitar visita técnica &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-cobalt-600">Preguntas Frecuentes</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950 mt-1">
+                    Dudas Técnicas Frecuentes
+                </h2>
+            </div>
+
+            <div class="space-y-3">
+                <details class="bg-white rounded-xl border border-slate-200 p-5 group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-navy-950 text-sm sm:text-base list-none">
+                        <span>¿Fabrican piezas a partir de una muestra física rota o desgastada?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+                        Sí. Realizamos ingeniería inversa sobre el componente. Medimos dimensiones originales, determinamos la dureza y aleación del material y fabricamos la refacción nueva o recuperamos la existente mediante soldadura y rectificado.
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-xl border border-slate-200 p-5 group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-navy-950 text-sm sm:text-base list-none">
+                        <span>¿Qué tolerancias dimensionales garantizan en taller?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+                        En procesos de maquinado CNC y rectificado mantenemos tolerancias de hasta ± 0.0005" (milésimas de pulgada) o centésimas de milímetro para ajustes H7 y asientos de precisión para rodamientos.
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-xl border border-slate-200 p-5 group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-navy-950 text-sm sm:text-base list-none">
+                        <span>¿Atienden emergencias por paro no programado de línea?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+                        Sí. Escríbenos directamente a <strong>ventas@maquinadospersa.com</strong> con la palabra <em>[EMERGENCIA]</em> en el asunto para activar turno prioritario en el taller.
+                    </p>
+                </details>
+
+                <details class="bg-white rounded-xl border border-slate-200 p-5 group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-navy-950 text-sm sm:text-base list-none">
+                        <span>¿Qué archivos de plano admiten para cotizar?</span>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+                        Recibimos archivos en PDF, fotos con cotas, archivos 2D (.DWG, .DXF) y modelos 3D (.STEP, .IGES, .SLDPRT).
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-950 text-white border-t border-navy-800 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Company Bio -->
+                <div class="space-y-3">
+                    <div class="bg-white rounded-lg p-1.5 shadow-sm inline-flex items-center">
+                        <img src="https://i.postimg.cc/tgjBBBSr/persa-logo.png" 
+                             alt="MAQUINADOS Y SERVICIOS PERSA" 
+                             class="h-9 w-auto max-w-[150px] object-contain"
+                             onerror="this.style.display='none';">
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed pt-1">
+                        MAQUINADOS Y SERVICIOS PERSA. Taller metalmecánico especializado en maquinado convencional y CNC, rectificado de alta precisión, afilado y soldadura en Apodaca, N.L.
+                    </p>
+                    <div class="text-[11px] text-emerald-400 flex items-center gap-1 font-mono">
+                        <i class="fa-solid fa-shield-halved text-xs"></i> Tolerancias rigurosas garantizadas
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div>
+                    <h4 class="font-bold text-xs uppercase tracking-wider text-blue-300 mb-3">Servicios</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="#servicios" class="hover:text-white transition">Maquinado Convencional</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition">Maquinado CNC de Serie</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition">Rectificado de Precisión</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition">Afilado de Cuchillas</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition">Soldadura Especializada</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition">Reparación Industrial</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition">Artículos Industriales (Bandas, Baleros, Tornillería)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coverage Areas -->
+                <div>
+                    <h4 class="font-bold text-xs uppercase tracking-wider text-blue-300 mb-3">Zona de Atención</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i> Parque Huinalá Apodaca</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i> Kronos y Prologis Park</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i> Corredor Industrial Pesquería</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i> San Nicolás de los Garza</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i> Monterrey Metropolitano</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Summary -->
+                <div>
+                    <h4 class="font-bold text-xs uppercase tracking-wider text-blue-300 mb-3">Contacto Directo</h4>
+                    <div class="space-y-2 text-xs text-slate-400">
+                        <p><i class="fa-solid fa-map-pin text-blue-400 mr-1.5"></i> Apodaca, Nuevo León, México</p>
+                        <p><i class="fa-solid fa-envelope text-blue-400 mr-1.5"></i> ventas@maquinadospersa.com</p>
+                        <p>
+                            <a href="https://facebook.com/maquinadospersa" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:text-white transition flex items-center gap-1.5">
+                                <i class="fa-brands fa-facebook text-blue-400"></i> facebook.com/maquinadospersa
+                            </a>
+                        </p>
+                        <p class="text-slate-500 pt-1 text-[11px]">Facturación electrónica CFDI y atención a órdenes de compra industriales.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-navy-900 text-center text-xs text-slate-500">
+                &copy; <span id="currentYear"></span> MAQUINADOS Y SERVICIOS PERSA. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2 flex items-center gap-2 shadow-2xl">
+        <a href="#cotizador" class="flex-1 py-2.5 rounded-lg bg-navy-950 active:bg-black text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm touch-manipulation">
+            <i class="fa-solid fa-calculator text-[11px] text-blue-400"></i>
+            <span>Cotizar Proyecto</span>
+        </a>
+        <button onclick="copyEmailToClipboard()" class="py-2.5 px-3 rounded-lg border border-slate-300 text-navy-950 active:bg-slate-100 text-xs font-bold flex items-center justify-center gap-1 touch-manipulation" title="Copiar correo">
+            <i class="fa-solid fa-copy text-blue-600"></i>
+            <span>Copiar Correo</span>
+        </button>
+    </div>
+
+    <div id="toastNotification" class="fixed bottom-16 sm:bottom-6 right-3 sm:right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 max-w-sm w-[calc(100%-1.5rem)] sm:w-full bg-navy-950 text-white border border-navy-800 rounded-xl shadow-2xl p-4 flex items-start gap-3 pointer-events-none">
+        <div id="toastIconContainer" class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+            <i class="fa-solid fa-circle-check text-base" id="toastIcon"></i>
+        </div>
+        <div class="flex-1">
+            <div class="font-bold text-xs sm:text-sm text-slate-100" id="toastTitle">Solicitud Recibida</div>
+            <div class="text-[11px] sm:text-xs text-slate-300 mt-0.5" id="toastMessage">Un ingeniero técnico revisará tus especificaciones.</div>
+        </div>
+    </div>
+
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            if (isHidden) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Prefill form from service cards
+        function prefillQuote(serviceName) {
+            const selectEl = document.getElementById('serviceType');
+            if (selectEl) {
+                for (let i = 0; i < selectEl.options.length; i++) {
+                    if (selectEl.options[i].value.toLowerCase().includes(serviceName.toLowerCase())) {
+                        selectEl.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            const quoteSection = document.getElementById('cotizador');
+            if (quoteSection) {
+                quoteSection.scrollIntoView({ behavior: 'smooth' });
+                const formCard = quoteSection.querySelector('form');
+                if (formCard) {
+                    formCard.classList.add('ring-2', 'ring-navy-950');
+                    setTimeout(() => formCard.classList.remove('ring-2', 'ring-navy-950'), 1200);
+                }
+            }
+        }
+
+        // Copy email address safely without alert()
+        function copyEmailToClipboard() {
+            const email = 'ventas@maquinadospersa.com';
+
+            function onCopySuccess() {
+                showToast('Correo Copiado al Portapapeles', 'ventas@maquinadospersa.com listo para pegar en tu cliente de correo.');
+            }
+
+            function legacyCopyFallback() {
+                const tempInput = document.createElement('input');
+                tempInput.value = email;
+                tempInput.style.position = 'fixed';
+                tempInput.style.opacity = '0';
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                try {
+                    document.execCommand('copy');
+                    onCopySuccess();
+                } catch (err) {
+                    showToast('No se pudo copiar', 'Copia manualmente: ventas@maquinadospersa.com');
+                }
+                document.body.removeChild(tempInput);
+            }
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(email).then(onCopySuccess).catch(legacyCopyFallback);
+            } else {
+                legacyCopyFallback();
+            }
+        }
+
+        // Handle quote submission via structured mailto
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            const clientName = document.getElementById('clientName').value.trim() || 'No especificado';
+            const clientEmail = document.getElementById('clientEmail').value.trim() || 'No especificado';
+            const serviceType = document.getElementById('serviceType').value || 'Cotización General';
+            const materialType = document.getElementById('materialType').value || 'Por definir';
+            const pieceQuantity = document.getElementById('pieceQuantity').value.trim() || 'Por definir';
+            const urgencyLevel = document.getElementById('urgencyLevel').value || 'Estándar';
+            const projectNotes = document.getElementById('projectNotes').value.trim() || 'Sin comentarios adicionales.';
+
+            const subject = encodeURIComponent(`Solicitud de Cotización: ${serviceType} - ${clientName}`);
+            const body = encodeURIComponent(
+`SOLICITUD FORMAL DE COTIZACIÓN - MAQUINADOS Y SERVICIOS PERSA
+============================================================
+Cliente / Empresa: ${clientName}
+Correo de contacto: ${clientEmail}
+Servicio Requerido: ${serviceType}
+Material especificado: ${materialType}
+Cantidad requerida: ${pieceQuantity}
+Plazo deseado: ${urgencyLevel}
+
+Especificaciones y tolerancias:
+${projectNotes}
+
+(Adjuntar planos PDF, DWG, STEP o fotos con cotas a este correo)
+============================================================
+Ubicación: Apodaca / Corredor Industrial Nuevo León`
+            );
+
+            window.location.href = `mailto:ventas@maquinadospersa.com?subject=${subject}&body=${body}`;
+
+            showToast(
+                'Generando Solicitud',
+                `Se preparó tu correo formal para ventas@maquinadospersa.com. Adjunta tus planos para respuesta en < 2 horas.`
+            );
+
+            document.getElementById('quoteForm').reset();
+        }
+
+        // Custom Toast feedback
+        let toastTimeout;
+        function showToast(title, message) {
+            const toast = document.getElementById('toastNotification');
+            const titleEl = document.getElementById('toastTitle');
+            const messageEl = document.getElementById('toastMessage');
+
+            titleEl.textContent = title;
+            messageEl.textContent = message;
+
+            toast.classList.remove('translate-y-32', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-32', 'opacity-0');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
